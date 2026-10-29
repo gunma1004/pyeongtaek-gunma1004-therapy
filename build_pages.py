@@ -169,8 +169,8 @@ def generate_page(title_area, page_path, breadcrumbs, related_links, current_cit
     full_url = f"{SITE_ORIGIN}{page_path}"
     
     # 요청하신 타이틀 & 메타디스크립션 양식 적용
-    page_title = f"{title_area} 경기 서울 출장 케어 마사지 | 지역별 이용 가이드 - 건마1004테라피"
-    meta_desc = f"1004테라피 선입금없는 후불제 {title_area} 경기 서울 출장 마사지 안내! 경기서울시 일정과 공간에 맞춰 제휴업체 선택지와 후기 등을 확인하세요."
+    page_title = f"{title_area} 출장 완벽케어 마사지 | 지역별 이용 가이드 - 건마1004테라피"
+    meta_desc = f"1004테라피 선입금없는 후불제 {title_area}  출장 완벽케어 마사지 안내! 경기서울시 일정과 공간에 맞춰 제휴업체 선택지와 후기 등을 확인하세요."
     
     seed = int(hashlib.md5(f"{title_area}_{page_path}".encode('utf-8')).hexdigest(), 16)
     review_count = str(95 + (seed % 65))
@@ -339,7 +339,7 @@ def generate_page(title_area, page_path, breadcrumbs, related_links, current_cit
   <main class="page-shell">
     <section class="intro">
       <p style="color: #e6bb72; font-weight: 800; letter-spacing: .08em;">24H PRIVATE CARE</p>
-      <h1>{title_area} 경기 서울 출장 케어 마사지<br>선입금 없는 안심 후불제 안내</h1>
+      <h1>{title_area} 출장 케어 마사지<br>선입금 없는 안심 후불제 안내</h1>
       <p class="intro-copy">{title_area} 고객님의 일정과 프라이빗한 공간에 맞춘 1:1 방문 맞춤 테라피! 선입금 요구 없이 도착 후 100% 결제하는 안전 제휴 매장입니다.</p>
       <div class="rating-badge">★ {rating_val} 점 / 5.0 만점 (실시간 이용 후기 {review_count}개 기준)</div>
     </section>
